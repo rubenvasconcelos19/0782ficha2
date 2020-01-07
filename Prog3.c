@@ -3,14 +3,14 @@
 int menu;
 float moeda;
 
-int main(void){
+int main(void){ //Programa com um menu de escolhas para fazer conversões
 
     printf("Insira um dos menus apresentados: \n 1- Euro - USD Dollar \n 2- USD Dollar - Euro \n 3- Euro - CAD \n 4- CAD - Euro\n");
     scanf("%d", &menu);
 
-    switch(menu){
+    switch(menu){ //4 Opções para o utilizador para conversões.
 
-        case 1:
+        case 1: //Converte de Eur para USD 
 
         printf("Insira o valor que quer converter: ");
         scanf("%f", &moeda);
@@ -18,7 +18,7 @@ int main(void){
 
         break;
 
-        case 2:
+        case 2: //Converte de USD para Eur
 
         printf("Insira o valor que quer converter: ");
         scanf("%f", &moeda);
@@ -26,7 +26,7 @@ int main(void){
 
         break;
 
-        case 3:
+        case 3: //Converte de Eur para CAD
 
         printf("Insira o valor que quer converter: ");
         scanf("%f", &moeda);
@@ -34,7 +34,7 @@ int main(void){
 
         break;
 
-        case 4:
+        case 4: //Converte de CAD para Eur
 
         printf("Insira o valor que quer converter: ");
         scanf("%f", &moeda);
@@ -42,8 +42,8 @@ int main(void){
 
         break;
 
-        default:
+        default: //Opção que aparece se a escolha do utilizador for diferente das opções fornecidas.
 
-        printf("Opção Inválida, Obrigado!");
+        printf("Opção Inválida, Obrigado!\n");
     }
 }
